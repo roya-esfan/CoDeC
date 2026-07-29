@@ -1,7 +1,0 @@
-.env
-.ipynb_checkpoints/
-__pycache__/
-outputs/
-*.jsonl
-*_question_results.csv
-*_seed_results.csv
