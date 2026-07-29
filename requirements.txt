@@ -1,6 +1,5 @@
 accelerate
 fireworks-ai
-jinja2
 matplotlib
 numpy
 pandas

@@ -12,8 +12,6 @@ question transcript as one sample.
   shown in the configuration cell.
 - `codec_pythia.ipynb` runs the corresponding reference-model analysis with
   `EleutherAI/pythia-1.4b-deduped`. The Hugging Face model revision is pinned.
-- `codec_visualizations.ipynb` loads the saved question-level results for
-  Qwen, Kimi, and Pythia and creates the reported tables and figures.
 
 ## Method
 
@@ -39,9 +37,6 @@ analysis notebooks expect a Supabase table named `codec_questions` containing:
 `question_id`, `season`, `episode`, `question_num`, `transcript`,
 `include_for_codec`, and `review_status`.
 
-The visualization notebook reads question-level results from
-`codec_question_results`. Run IDs are specified in its configuration cell.
-
 ## Configuration
 
 Set the following environment variables before running the notebooks:
@@ -60,9 +55,6 @@ Install the dependencies with:
 ```bash
 pip install -r requirements.txt
 ```
-
-Generated tables and figures are written to `outputs/` and are not tracked by
-Git.
 
 ## Reference
 
