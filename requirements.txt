@@ -1,0 +1,8 @@
+accelerate
+fireworks-ai
+matplotlib
+numpy
+pandas
+supabase
+torch
+transformers
