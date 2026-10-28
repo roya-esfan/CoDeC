@@ -29,6 +29,17 @@ The comparison is repeated with five randomly sampled context questions and
 averaged before classification. A question is counted as a contamination signal
 when its average delta is negative.
 
+### Results
+
+For Qwen3-VL 30B-A3B, Kimi K2P6, and Pythia 1.4B, no question had a negative
+mean delta after averaging across five context draws. The reported CoDeC score
+was therefore **0% for each model**, both by season and overall. This check
+found no contamination signal.
+
+![Question-level CoDeC delta distributions across seven seasons for Qwen3-VL 30B-A3B, Kimi K2P6, and Pythia 1.4B. All question-level means are above zero.](images/codec-model-comparison.png)
+
+### Setup
+
 The CoDeC notebooks expect a Supabase table named `codec_questions` containing:
 
 `question_id`, `season`, `episode`, `question_num`, `transcript`,
